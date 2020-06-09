@@ -4,6 +4,6 @@
   publish = "public"
 
 [[redirects]]
-    from = "/dashboard/*"
-    to = "/dashboard"
-    status = 200
+  from = "/dashboard/*"
+  to = "/dashboard"
+  status = 200

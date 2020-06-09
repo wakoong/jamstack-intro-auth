@@ -4,7 +4,10 @@ import { navigate } from "gatsby";
 
 const RouteLogin = ({ showModal }) => {
   const identity = useIdentityContext();
-  if (identity && identity.isLoggedIn) {
+  const isLoggedIn = identity && identity.isLoggedIn;
+
+  console.log({ identity, isLoggedIn });
+  if (isLoggedIn) {
     navigate("/dashboard/secret", { replace: true });
   }
   return (
