@@ -1,3 +1,8 @@
+[build]
+  command = "yarn build"
+  functions = "src/functions"
+  publish = "public"
+
 [[redirects]]
     from = "/dashboard/*"
     to = "/dashboard"
